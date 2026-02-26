@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>4.0.3</version>
+		<relativePath/>
+	</parent>
+
+	<modules>
+		<module>skeleton-ms</module>
+	</modules>
+	<properties>
+		<ms-java-core.version>1.0.0-RELEASE</ms-java-core.version>
+		<mongo-util-library.version>1.0.0-RELEASE</mongo-util-library.version>
+		<springdoc-openapi-starter-webmvc-ui.version>3.0.1</springdoc-openapi-starter-webmvc-ui.version>
+		<spring-cloud.version>2025.1.0</spring-cloud.version>
+	</properties>
+
+	<groupId>com.eventicado.skeleton</groupId>
+	<artifactId>eventicado-skeleton-java-service</artifactId>
+	<version>1.0.0-RELEASE</version>
+	<name>eventicado-skeleton-java-service</name>
+	<description>Skeleton Java MS</description>
+	<packaging>pom</packaging>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springdoc</groupId>
+				<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+				<version>${springdoc-openapi-starter-webmvc-ui.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.eventicado.core</groupId>
+				<artifactId>core-library</artifactId>
+				<version>${ms-java-core.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.eventicado.core</groupId>
+				<artifactId>mongo-util-library</artifactId>
+				<version>${mongo-util-library.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+
+</project>

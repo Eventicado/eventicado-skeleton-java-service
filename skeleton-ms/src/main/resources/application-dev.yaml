@@ -1,0 +1,5 @@
+server:
+  port: 8080
+spring:
+  mongodb:
+    uri: mongodb://admin:admin@evenitcado:30102/eventicado-skeleton?authSource=admin

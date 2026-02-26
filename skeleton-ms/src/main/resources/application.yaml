@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: eventicado-skeleton-java-service
+server:
+  servlet:
+    context-path: /eventicado/skeleton/v1
+management:
+  endpoints:
+    web:
+      base-path: /
+    access:
+      default: none
+  endpoint:
+    health:
+      access: read_only
+    metrics:
+      access: read_only
+    prometheus:
+      access: read_only
+
+

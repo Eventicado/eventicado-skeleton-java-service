@@ -1,0 +1,4 @@
+<configuration>
+    <include resource="logback/logback-eventicado.xml"/>
+
+</configuration>

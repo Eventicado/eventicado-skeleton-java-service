@@ -1,0 +1,5 @@
+@Library('jenkins-plugins') _
+buildJava23(
+    SERVICE_NAME: "skeleton",
+    NAMESPACE: "eventicado",
+)

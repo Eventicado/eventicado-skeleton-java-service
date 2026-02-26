@@ -1,2 +1,1 @@
-# eventicado-skeleton-java-service
-Skeleton for Eventicado Java MS
+# Eventicado-eventicado-inventory-processing-java-service
